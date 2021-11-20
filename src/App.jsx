@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { ColorfulMessage } from "./components/ColofulMessage";
 import "bulma/css/bulma.css";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -46,7 +48,51 @@ const App = () => {
                 </button>
                 <br />
                 <p>{num}</p>
+
                 {faceShowFlag && <p>(^^♪</p>}
+
+                <table className="table is-striped">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div className="field">
+                          <label className="label">Name</label>
+                          <div className="control">
+                            <input
+                              className="input"
+                              type="text"
+                              placeholder="Text input"
+                            />
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div className="field">
+                          <label className="label">Username</label>
+                          <div className="control has-icons-left has-icons-right">
+                            <input
+                              className="input is-success"
+                              type="text"
+                              placeholder="Text input"
+                              value="bulma"
+                            />
+                            <span className="icon is-small is-left">
+                              <i className="fas fa-user"></i>
+                            </span>
+                            <span className="icon is-small is-right">
+                              <i className="fas fa-check"></i>
+                            </span>
+                          </div>
+                          <p className="help is-success">
+                            This username is available
+                          </p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
