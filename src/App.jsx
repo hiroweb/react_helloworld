@@ -33,8 +33,8 @@ const App = () => {
             <div className="column">
               <div className="content">
                 <h1 className="title is-3">Hello World</h1>
-                <ColorfulMessage color="blue">お元気ですか？</ColorfulMessage>
-                <ColorfulMessage color="pink">元気です!</ColorfulMessage>
+                <ColorfulMessage color="blue">testですか？</ColorfulMessage>
+                <ColorfulMessage color="pink">testです!</ColorfulMessage>
                 <button className="button is-primary" onClick={onClickCountUp}>
                   カウントアップ
                 </button>
